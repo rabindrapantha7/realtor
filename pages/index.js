@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Flex, Box, Text, Button } from '@chakra-ui/react'
 
-const Banner = ({
+export const Banner = ({
     purpose,
     imageUrl,
     title1,
@@ -13,7 +13,7 @@ const Banner = ({
     buttonText,
 }) => (
     <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
-        <Image src={imageUrl} width="500" height="300" alt="Banner" />
+        <Image src={imageUrl} width={500} height={300} alt="Banner" />
         <Box p="5">
             <Text color="gray.500" fontSize="sm" fontWeight="medium">
                 {purpose}
@@ -43,6 +43,7 @@ const Banner = ({
 export default function Home() {
     return (
         <div>
+            {/* <p>https://youtu.be/y47gYvXchXM?t=1226</p> */}
             <Banner
                 purpose="RENT A HOME"
                 title1="Rental Homes for"
