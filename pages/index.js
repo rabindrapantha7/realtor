@@ -43,7 +43,8 @@ export const Banner = ({
 )
 
 export default function Home({ propertiesForSale, propertiesForRent }) {
-    console.log(propertiesForSale);
+    // console.log(propertiesForSale);
+    // https://youtu.be/y47gYvXchXM?t=3035
     return (
         <Box>
             <Banner
