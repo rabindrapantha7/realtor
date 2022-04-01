@@ -22,7 +22,7 @@ const Property = ({
     },
 }) => {
     return (
-        <Link href={`/property/${externalID}`}>
+        <Link href={`/property/${externalID}`} passHref>
             <Flex
                 flexWrap="wrap"
                 w="420px"
