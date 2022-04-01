@@ -37,7 +37,7 @@ const Search = ({ properties }) => {
             </Text>
             <Flex flexWrap="wrap" justifyContent="space-between">
                 {properties.map((property) => (
-                    <Property property={property} />
+                    <Property property={property} key={property.id} />
                 ))}
             </Flex>
 
